@@ -9,7 +9,7 @@ Clique no botão abaixo para ver o deploy do projeto na [Vercel](https://vercel.
 [![Deploy with Vercel](https://vercel.com/button)](https://wildbeast-mu.vercel.app)
 
 # :camera: Screenshot
-<img src="https://i.ibb.co/FJTLwpC/imagem-2021-03-01-210846.png" width="600px"></a>
+<img src="https://bookmark-landing-page-kappa.vercel.app" width="600px"></a>
 
 # :construction_worker: Como rodar ?
 ```bash
