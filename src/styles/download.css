@@ -1,0 +1,62 @@
+.downloadContainer{
+    margin: 140px 30px 0px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadContainer > h2{
+    text-align: center;
+}
+.downloadContainer > p{
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.downloadsOptionsContainer{
+    margin-top: 20px;
+    display: flex;
+}
+.downloadOption{
+    margin: 20px;
+    box-shadow: 0 2px 10px rgb(190, 226, 243);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.downloadOption img{
+    padding: 20px 40px;
+}
+.downloadOption h3{
+    margin-top: 10px;
+}
+.downloadOption p{
+    margin: 10px 0 30px 0;
+    font-size: 14px;
+}
+.downloadOption .downloadButton{
+    border-top: 4px dotted rgba(0, 0, 0, 0.164);
+}
+.downloadOption button{
+    border: 0;
+    background: var(--blue);
+    color: white;
+    font-size: 14px;
+    padding: 13px 25px;
+    margin: 25px;
+    border-radius: 3px;
+}
+
+
+/* DOWNLOAD RESPONSIVO */
+
+@media(max-width: 670px){
+    .downloadsOptionsContainer{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,120 @@
+.featuresContainer{
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featuresContainer > p{
+    margin-top: 20px;
+    max-width: 500px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+/* FEATURE NAVGATION */
+
+.featuresNavgation {
+    margin-top: 20px;
+    display: flex;   
+    border-bottom: 1px solid rgba(165, 165, 165, 0.37);
+}
+.featuresNavgation > div{
+    color: var(--text);
+    padding: 20px 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.featuresNavgation > div:hover{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.116);
+}
+.featuresNavgation > div.select{
+    color: black;
+    border-bottom: 2px solid var(--red);
+}
+
+/* FEATURE NAVGATION RESPONSIVO*/
+
+@media(max-width: 630px){
+    .featuresNavgation {
+        flex-direction: column;
+        border-bottom: none;
+    }
+}
+
+/* FIM FEATURE NAVGATION */
+
+/* FEATURE */
+
+.featureContainer{
+    margin: 0 30px;
+    margin-top: 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.featureImageContainer{
+    text-align: center;
+    position: relative;
+}
+.featureImageContainer img{
+    position: relative;
+    z-index: 1;
+    width: 70%;
+}
+.featureImageContainer .backgroundBlue{
+    position: absolute;
+    width: 1000px;
+    height: 90%;
+    background: var(--blue);
+    right: 30%;
+    bottom: -80px;
+    z-index: 0;
+    border-radius: 0 700px 700px 0;
+}
+
+
+.featureContent p {
+    margin-top: 20px;
+}
+.featureContent button{
+    margin-top: 20px;
+    border: 0;
+    background: var(--blue);
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 3px;
+}
+
+/* FEATURE RESPONSIVO */
+
+@media(max-width: 800px){
+    .featureContainer{
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+    .featureImageContainer .backgroundBlue{
+        position: absolute;
+        width: 1000px;
+        height: 60%;
+        background: var(--blue);
+        right: 30%;
+        bottom: -30px;
+        z-index: 0;
+        border-radius: 0 700px 700px 0;
+    }
+    .featureImageContainer img{
+        width: 100%;
+        max-width: 450px;
+    }
+    .featureContent p{
+        text-align: left;
+    }
+    .featureContent{
+        margin-top: 70px;
+    }
+}

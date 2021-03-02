@@ -1,0 +1,127 @@
+.footerTop{
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--blue);
+    padding: 60px 0;
+}
+.footerTop h1, .footerContainer .footerTop p {
+    text-align: center;
+    color: white;
+}
+.footerTop h1{
+    margin-top: 30px;
+    font-weight: 500;
+    max-width: 450px;
+}
+
+.footerForm{
+    margin-top: 30px;
+    display: flex;
+}
+.footerForm input{
+    border: 0;
+    border-radius: 3px;
+    width: 300px;
+    padding: 0 10px;
+}
+.footerForm button{
+    margin-left: 15px;
+    border: 0;
+    background: var(--red);
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 3px;
+}
+
+/* FOOTER TOP RESPONSIVO */
+
+@media(max-width: 470px){
+    .footerTop h1{
+        font-size: 20px;
+    }
+
+    .footerForm{
+        flex-direction: column;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .footerForm input{
+        width: 100%;
+        height: 40px;
+    }
+    .footerForm button{
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 12px 25px;
+    }
+}
+
+/* FOOTER BOTTOM */
+
+.footerBottom{
+    background: var(--blue-dark);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+.footerBottom .navgation{
+    display: flex;
+    align-items: center;
+}
+.footerBottom .navgation img{
+    width: 150px;
+}
+.footerBottom .navgation ul{
+    list-style: none;
+    display: flex;
+    margin-left: 40px;
+}
+.footerBottom .navgation ul li{
+    margin: 0 20px;
+    font-size: 13px;
+}
+
+.footerBottom .redeSociais{
+    display: flex;
+}
+.footerBottom .redeSociais img{
+    width: 20px;
+    filter: invert(100%);
+}
+.footerBottom .redeSociais img + img{
+    margin-left: 30px;
+}
+
+
+/* FOOTER BOOTOM RESPONSIVO */
+
+@media(max-width: 700px){
+    .footerBottom{
+        flex-direction: column;
+    }
+    .footerBottom .navgation{
+        flex-direction: column;
+    }
+    .footerBottom .navgation ul{
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .footerBottom .navgation ul li{
+        margin: 10px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Rubik;
+    /*box-shadow: 0 0 1.2px red;*/
+}
+
+:root{
+    --blue: hsl(231, 69%, 60%);
+    --blue-dark: hsl(229, 31%, 21%);
+    --red: hsl(0, 94%, 66%);
+    --text: hsl(229, 8%, 60%);
+}
+
+.container{
+    overflow: hidden;
+}
+
+p{
+    color: var(--text);
+}
+
+button{
+    transition: filter 0.2s;
+}
+button:hover{
+    cursor: pointer;
+    filter: saturate(80%);
+}
